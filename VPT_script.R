@@ -233,7 +233,7 @@ require(MatchIt)
   
 
 #### 1. EEG DATA ##################################################################################################################################################
-### Figure 2: Plot time-course of ERPs #####
+### Figure 3: Plot time-course of ERPs #####
   # uses per-time-point output of aggregated activity across respective electrodes from BrainVision Analyzer
   
   rm(list = ls())
@@ -3272,3 +3272,4 @@ anova(m1)
   table <- tibble::rownames_to_column(table,var = " ")
   doc_1 <- body_add_table(doc_1, table, style = "table_template")
   print(doc_1, target = ".../LFSW_group_SEPR.docx")
+
